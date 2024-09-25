@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(217, 247, 247);
+}
+.top-user-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgb(20, 130, 130);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-user-icon .fas.fa-user {
+  color: white;
+  font-size: 45px;
+}
+h1 {
+  font-size: 36px;
+  color: rgb(20, 130, 130);
+  margin-top: 8px;
+}
+
+.main-div {
+  width: 500px;
+  height: 200px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.input-container input {
+  outline: none;
+  border: none;
+  background: none;
+  color: inherit;
+  font-size: 1rem;
+  flex: auto 1 1;
+  width: 90%;
+}
+
+.input-container {
+  border: 1px solid rgba(151, 151, 151, 0.8);
+  border-radius: 5px;
+}
+
+.input-container .fas {
+  padding: 10px;
+}
+
+.fas.fa-user,
+.fas.fa-lock {
+  color: rgba(128, 128, 128, 0.6);
+}
+button {
+  padding: 10px;
+  background-color: rgb(20, 130, 130);
+  color: white;
+  font-weight: bold;
+  border: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.span1 {
+  align-self: flex-end;
+  color: rgb(151, 151, 151);
+}
+p {
+  color: black;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.span2 {
+  color: rgb(20, 130, 130);
+}

@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    scrollbar-width: 0;
+}
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+h1 {
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+}
+
+.color-blue{
+    color: #0367f2 !important;
+}
+
+.flex {
+    display: flex;
+}
+
+.block {
+    display: block;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.gap_06 {
+    gap: .6rem;
+}
+
+.gap_1 {
+    gap: 1rem;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.wrapper {
+    gap: 3rem;
+}
+
+.side-container {
+    min-width: 45%;
+    width: 45%;
+    max-width: 45%;
+    max-height: 100vh;
+    min-height: 100vh;
+    height: 100vh;
+    background-color: #fffcf8;
+    padding: 0 1rem;
+    position: fixed;
+    
+}
+
+.alt_img {
+
+    margin: 5rem auto 0;
+    object-fit: contain;
+    max-width: 80% !important;
+    min-width: 29rem;
+    width: 29rem;
+
+}
+footer{
+    font-weight: 700;
+}
+
+.side-container h1 {
+    line-height: 3.6rem;
+    font-size: 2.5rem;
+    color: #000812;
+    max-width: 24rem;
+}
+
+.container_padding {
+    padding: 0 1rem;
+}
+
+.right-container {
+    min-width: 52%;
+    width: 52%;
+    margin-left: auto;
+    padding: 0 1rem;
+    overflow: auto;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.already {
+    margin-top: 2rem;
+}
+
+.already a {
+    color: #0367f2;
+    font-weight: 600;
+}
+
+h2 {
+    margin: 3rem 0 1rem;
+    color: #0B1E48;
+}
+
+form {
+    width: 80%;
+    color: #85888d;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000e0;
+    
+}
+
+.input-group {
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.input {
+    width: 48%;
+}
+
+
+input,
+select {
+    cursor: text !important;
+
+    box-shadow:
+        0 0 1px #e7e7f07d, 0 0 2px #c1c2fc2c;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #fafafa;
+    color: black;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    transition: .5s;
+    padding: 16px 24px 16px 10px;
+    
+    
+}
+
+
+:is(input,select):invalid {
+    color: #b2b3b4 !important;
+    font-weight: 600;
+}
+
+:is(input,select):valid {
+    color: black;
+    font-weight: 100;
+}
+:is(input, select):hover {
+    border: 1px solid #6a6ff5;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 20 20" fill="%23cbcdcf"><path d="M6 8l4 4 4-4" stroke="%23cbcdcf" stroke-width="1" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.privacy {
+    max-width: 35rem;
+    line-height: 1.5rem;
+    margin-top: 3rem;
+}
+
+.btn {
+    background-color: #6a6ff5;
+    color: white;
+    gap: 1rem;
+    padding: 1rem 0;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    margin: 1.5rem 0 2rem;
+    cursor: pointer;
+    transition: .5s;
+}
+.btn:hover{
+    background-color: #7376c6;
+    color: #cecbcb;
+}
+.sm-logo{
+    display: none;
+}
+.relative{
+    position: relative;
+}
+i,svg{
+    position: absolute;
+    top: 1rem;
+    right: 10px;
+    cursor: pointer;
+}
+@media (max-width: 1298px) {
+    form{
+        width: 90%;
+    }
+  }
+@media (max-width: 1153px) {
+    .alt_img{
+        min-width: 25rem;
+        width: 25rem;
+    }
+  }
+@media (max-width: 991px) {
+    .alt_img{
+        min-width: 18rem;
+        width: 18rem;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+  }
+@media (max-width: 768px) {
+    body{
+        font-size: 14px;
+    }
+    .side-container{
+        display: none;
+    }
+    .right-container{
+        width: 100%;
+    }
+    form{
+        width: 100%;
+    }
+    .already{
+        text-align: center !important;
+        font-weight: bold;
+    }
+    .sm-logo{
+        display: flex;
+    }
+    
+  }

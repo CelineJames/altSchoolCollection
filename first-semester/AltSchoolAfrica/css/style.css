@@ -1,0 +1,58 @@
+html {
+  font-family: "outfit", sans-serif;
+}
+
+.table {
+  overflow: auto;
+
+  width: 100%;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+
+  border-collapse: collapse;
+}
+caption {
+  padding: 15px;
+  font-style: italic;
+  caption-side: top;
+  letter-spacing: 1px;
+}
+
+th,
+td {
+  padding: 10px;
+}
+th {
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+td {
+  letter-spacing: 1px;
+}
+
+thead {
+  background-color: black;
+  color: white;
+}
+
+thead th,
+tr th {
+  border: 1px solid #a5a5a5ba;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #a5a5a5ba;
+}
+tbody tr:nth-child(even) {
+  background-color: #ffffffcc;
+}
+
+@media (max-width: "760px") {
+  body {
+    background-color: red;
+  }
+}

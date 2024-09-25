@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* padding: 20px 0 0 0; */
+  font-family: "Montserrat", sans-serif;
+}
+main {
+  display: flex;
+  justify-content: space-between;
+
+  > * {
+    flex: 50%;
+  }
+}
+.left {
+  background-color: rgb(249, 226, 230);
+  padding-top: 25px;
+}
+.right {
+  padding-top: 25px;
+}
+.right .sign-in {
+  display: flex;
+  justify-content: end;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+/* .div-label {
+  display: inline-block;
+} */
+/* .div-input {
+  display: inline-block;
+} */
+
+/* form {
+  width: 100%;
+} */

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="favicon" href="./img/alt-school_logo.svg" />
+    <link href="./css/media.css" rel="stylesheet" />
+    <title>Media Elements</title>
+  </head>
+  <body>
+    <picture>
+      <source srcset="./assets/mypicture.jpeg" media="(max-width:375px)" />
+
+      <source srcset="./assets/itoro-james.png" media="(max-width:768px)" />
+
+      <source srcset="./assets/mypicture.jpeg" media="(max-width:1200px)" />
+
+      <img
+        src="./assets/miss-james.avif"
+        alt="a picture of myself"
+        loading="lazy"
+      />
+    </picture>
+
+    <audio controls autoplay loop muted preload="auto" crossorigin="anonymous">
+      <source src="assets/audio.ogg" type="audio/ogg" />
+      sorry your browser does not support the audio element
+    </audio>
+
+    <video controls autoplay loop muted preload="auto" crossorigin="anonymous">
+      <source src="./assets/video.mp4" type="video/mp4" />
+      <source src="./assets/video.mov" type="video/mov" />
+      sorry your browser does not support the video element.
+    </video>
+  </body>
+</html>

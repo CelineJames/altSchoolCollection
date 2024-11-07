@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+  line-height: 1.6;
+  background-color: rgba(247, 253, 252, 1);
+  color: rgba(0, 11, 10, 1);
+  font-family: "Lato", sans-serif;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 8rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  margin-bottom: 0.5rem;
+}
+
+.div-text-content {
+  max-width: 460px;
+  /* min-width: 320px; */
+  width: 50%;
+
+  .logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .hidden-text {
+    display: none;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 25px;
+  }
+}
+
+#signup-form {
+  background-color: white;
+  max-width: 580px;
+  min-width: 430px;
+  width: 50%;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 40px 0 rgba(4, 8, 19, 0.1);
+}
+
+.input-group {
+  width: 100%;
+  gap: 10px;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+select {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0 0 0 1rem;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  appearance: none;
+  background: url(./assets/angle-down.svg) no-repeat center right;
+}
+
+select:focus {
+  border: none;
+  outline: 1px solid rgba(46, 196, 182, 1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  margin-top: 1.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+input {
+  font-family: inherit;
+  width: 100%;
+  padding: 0 0 0 1rem;
+  /* outline-color: rgba(240, 240, 240, 1) ; */
+}
+.input {
+  width: 50%;
+}
+
+::-webkit-input-placeholder {
+  font-size: 1rem;
+  font-weight: 400;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+input:focus {
+  border: none;
+  outline: 1px solid rgba(46, 196, 182, 1);
+}
+
+input[type="date"] {
+  color: transparent;
+
+  position: relative;
+}
+
+.display_date {
+  color: initial !important;
+}
+
+input[type="date"]::after {
+  content: url("./assets/calender\ logo.svg");
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  transform: scale(1);
+  z-index: 2;
+}
+
+.hide_display_text {
+  display: none;
+}
+#display_text {
+  font-size: 1rem;
+  margin-left: 1rem;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  position: absolute;
+  z-index: 2;
+  bottom: 10px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  /* display: none; */
+
+  transform: scale(3);
+  position: absolute;
+  z-index: 4;
+  right: 20px;
+  opacity: 0;
+}
+
+input,
+select {
+  height: 50px;
+}
+
+#input-gender {
+  width: 100%;
+}
+
+#input-activity,
+#input-password,
+button {
+  width: 100%;
+}
+.password-div {
+  position: relative;
+}
+
+.show {
+  width: 20px;
+  position: absolute;
+  right: 10px;
+  top: 60%;
+}
+
+button {
+  background-color: rgba(46, 196, 182, 1);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  padding: 1rem 0;
+  margin: 1.5rem 0;
+}
+
+.agreement > p {
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.agreement span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.agreement a {
+  text-decoration: underline;
+  color: rgba(46, 196, 182, 1);
+}
+
+/* MOBILE VIEW */
+
+@media only screen and (max-width: 450px) {
+  main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .div-text-content {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}

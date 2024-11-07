@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="favicon" href="./assets/Logo.svg" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>For Individuals</title>
+  </head>
+  <body>
+    <main>
+      <div class="div-text-content">
+        <div class="logo">
+          <img src="./assets/Logo.svg" alt="logo" />
+        </div>
+        <div class="text-content">
+          <h1>For Individuals</h1>
+          <p class="hidden-text">
+            Inspiring wholesome harmony for the mind, body and spirit, for
+            everyone, everywhere.
+          </p>
+          <p>
+            Start benefiting from the wellness experience. For companies looking
+            on increasing productivity, and improving organizzational wellness.
+          </p>
+        </div>
+      </div>
+
+      <form id="signup-form" novalidate>
+        <div class="input-group flex justify-between">
+          <div class="input">
+            <label for="firstname">First Name</label>
+            <input
+              type="text"
+              name="firstname"
+              id="input-firstname"
+              placeholder="Tolu"
+              title="first Name"
+              required
+            />
+            <div class="fn-error" style="font-size: 12px; color: red;"></div>
+          </div>
+          <div class="input">
+            <label for="lastname">Last Name</label>
+            <input
+              type="text"
+              placeholder=""
+              title="last Name"
+              name="lastname"
+              id="input-lastname"
+              required
+            />
+            <div class="ln-error" style="font-size: 12px; color: red;"></div>
+          </div>
+        </div>
+
+        <div class="input-group flex justify-between">
+          <div class="input">
+            <label for="input-gender" title="Gender">Gender</label>
+            <select title="Genders" name="gender" id="input-gender" required>
+              <option value="" selected disabled>Select here</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+            <div class="gender-error" style="font-size: 12px; color: red;"></div>
+          </div>
+          <div class="input" style="position: relative; user-select: none">
+            <label for="input-date" title="Date of Birth">Date of Birth</label>
+            <span id="display_text">Select here</span>
+            <input type="date" id="input-date" required />
+            <div class="dob-error" style="font-size: 12px; color: red;"></div>
+          </div>
+        </div>
+
+        <div class="input-group flex justify-between">
+          <div class="input">
+            <label for="Weight">Weight (KG)</label>
+            <input
+              type=""
+              name="firstname"
+              id="input-weight"
+              placeholder="Enter Weight"
+              title="Weight"
+              required
+              />
+              <div class="weight-error" style="font-size: 12px; color: red;"></div>
+          
+          </div>
+          <div class="input">
+            <label for="Height">Height (CM)</label>
+            <input
+              type="text"
+              placeholder="Enter Height here.."
+              title="Height"
+              name="Height"
+              id="input-height"
+              required
+              />
+              <div class="height-error" style="font-size: 12px; color: red;"></div>
+          </div>
+        </div>
+
+        <div class="">
+          <label for="input-activity" title="Activity">Activity Level</label>
+          <select title="Activity" name="activity" id="input-activity" required>
+            <option value="" class="select-text" selected disabled>
+              Select here
+            </option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+          <div class="activity-error" style="font-size: 12px; color: red;"></div>
+        </div>
+
+        <div class="password-div">
+          <label for="password"> Password</label>
+          <input type="password" id="input-password" placeholder="" required />
+          <img src="./assets/show.svg" alt="" class="show" />
+          <div class="password-error" style="font-size: 12px; color: red;"></div>
+        </div>
+
+        <button type="submit">Register</button>
+        <div class="agreement">
+          <p>
+            By clicking Register, you agree to our
+            <a href="#"><span>Terms of Use</span></a> and our
+            <a href="#"><span>Privacy Policy</span></a>
+          </p>
+        </div>
+      </form>
+    </main>
+   <script src="./index.js"></script>
+  
+  </body>
+</html>

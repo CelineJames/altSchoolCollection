@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>WP Pusher</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo-div">
+          <img src="./assets/wppusher-logo copy.svg" alt="logo" />
+        </div>
+        <ul class="nav-items">
+          <li><a href="#">Download</a></li>
+          <li><a href="#">Learn more</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Account</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="main-content">
+        <div class="checkout">
+          <div class="check">
+            <h2>Checkout</h2>
+          </div>
+
+          <div class="basic">
+            <div class="flex-1">
+              <img src="./assets/one.svg" alt="" />
+              <h3>Your Basic Information</h3>
+            </div>
+       <form action="">
+                <div class="input-div">
+              <div class="input-box">
+                <label for="first-name"><b>First Name</b></label> <br />
+                <input type="text" placeholder="Jane" id="first-name" />
+                <div class="error"></div>
+              </div>
+              <div class="input-box">
+                <label for="first-name"><b>Last Name</b></label> <br />
+                <input type="text" placeholder="Doe" id="last-name" />
+                <div class="error1"></div>
+
+              </div>
+            </div>
+            <div class="input-box">
+              <label for="email"><b>E-mail</b></label> <br />
+              <input
+                type="email"
+                placeholder="janedoe@example.com"
+                id="email"
+              />
+              <div class="error2"></div>
+            </div>
+          </div>
+          <div class="payment">
+            <div class="flex-1">
+              <img src="./assets/two.svg" alt="" />
+              <h3>Your Payment Information</h3>
+            </div>
+
+            <div class="card-input">
+              <label for="card-number"><b>Credit Card</b></label
+              ><br />
+              <div class="card-input-box">
+                <input type="text" placeholder="Card Number" id="card-number" />
+                <input type="text" placeholder="MM/YY" pattern="\d{2}/\d{4}" id="expiry-date" />
+                <input type="text" placeholder="CVV" id="cvv" />
+              </div>
+                <div class="expiry-error" style="color: red;font-size: 10px;" ></div>
+                <div class="payment-message " style="color: red;font-size: 10px;" ></div>
+                <div class="cvv-error" style="color: red;font-size: 10px;" ></div>
+
+            </div>
+          </div>
+          <div class="button-section">
+            <button type="submit" class="mega" id="submitBtn">
+              <a href="#">Buy WP Pusher</a>
+            </button>
+
+            <div class="button-down-text">
+              <img src="./assets/question mark.svg" alt="" />
+              <p>
+                <b>Need any help?</b> Don't hesitate to <a href="#">contact</a>
+                <br />
+                support!
+              </p>
+            </div>
+            <img src="./assets/stripe logo.svg" alt="stripe logo" />
+          </div>
+        </div>
+       </form>
+        <div class="freelance">
+          <div class="freelancer-plan">
+            <h3>Freelancer</h3>
+            <div class="dollar-sign">
+              <sub >  <img style="margin-bottom: -25px;" src="./assets/dollar-sign.svg" alt="dollar sign" /></sub>
+              <h4>99<span> <span>/</span> Year</span></h4>
+            </div>
+            <p><i>Automatically renews after 1 year</i></p>
+          </div>
+
+
+          <!-- TICK SECTION -->
+          <div class="tick-section">
+            <div class="tick-list">
+              <img src="./assets/tick-up.svg" alt="tick-up" />
+              <p>Use on 5 client sites</p>
+            </div>
+            <div class="tick-list">
+              <img src="./assets/tick-up.svg" alt="tick-up" />
+              <p>Private repositories</p>
+            </div>
+            <div class="tick-list">
+              <img src="./assets/tick-up.svg" alt="tick-up" />
+              <p>Email support</p>
+            </div>
+          </div>
+          <div class="agency-plan">
+            <p>Need 20 client sites?</p>
+            <a href="#">Switch to the <i>Agency</i> plan</a>
+          </div>
+
+          <hr />
+
+          <div class="ftp">
+            <p>
+              <i
+                >FTP is horrible to deal with. <b>WP Pusher</b> solves that
+                issue, and the customer support is awesome!</i
+              >
+            </p>
+            <div class="quote-image">
+              <img src="./assets/Bitmap-image.svg" alt="An image" />
+              <h3>Kirk Beard</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>© 2018 WP Pusher IVS · <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

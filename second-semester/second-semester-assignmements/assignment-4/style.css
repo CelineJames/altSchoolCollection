@@ -115,7 +115,7 @@ input {
   /* outline-color: rgba(240, 240, 240, 1) ; */
 }
 .input {
-  width: 50%;
+  width: 100%;
 }
 
 ::-webkit-input-placeholder {
@@ -134,9 +134,9 @@ input[type="date"] {
   color: transparent;
   border: 1px solid grey;
   position: relative;
-  width: 100% !important;
-  max-width: 100%;
-  min-width: 100%;
+  width: 100%;
+  /* max-width: 100%; */
+  /* min-width: 100%; */
 }
 
 .display_date {
@@ -145,7 +145,7 @@ input[type="date"] {
 
 input[type="date"]::after {
   content: url("./assets/calender\ logo.svg");
-  /* position: absolute; */
+  position: absolute;
   right: 8px;
   top: 15px;
   transform: scale(1);
@@ -257,6 +257,10 @@ button {
     font-weight: 400;
     word-spacing: 0;
     letter-spacing: 0;
+  }
+
+  .input {
+    width: 100%;
   }
 
   input,

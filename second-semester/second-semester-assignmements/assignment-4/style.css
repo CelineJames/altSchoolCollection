@@ -46,10 +46,6 @@ h1 {
     }
   }
 
-  .hidden-text {
-    display: none;
-  }
-
   p {
     font-size: 1rem;
     font-weight: 400;
@@ -262,6 +258,10 @@ select{
 
 #display_text{
   font-size: .8rem;
+}
+
+#input-activity{
+  border: 1px solid grey;
 }
 
   .div-text-content {

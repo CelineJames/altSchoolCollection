@@ -115,7 +115,7 @@ input {
   /* outline-color: rgba(240, 240, 240, 1) ; */
 }
 .input {
-  width: 100%;
+  width: 50%;
 }
 
 ::-webkit-input-placeholder {
@@ -134,7 +134,7 @@ input[type="date"] {
   color: transparent;
   border: 1px solid grey;
   position: relative;
-  width: 100%;
+  width: 100% !important;
   /* max-width: 100%; */
   /* min-width: 100%; */
 }
@@ -172,7 +172,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   transform: scale(3);
   position: absolute;
   z-index: 4;
-  right: 20px;
+  right: 15px;
   opacity: 0;
 }
 
@@ -260,7 +260,7 @@ button {
   }
 
   .input {
-    width: 100%;
+    width: 50%;
   }
 
   input,

@@ -249,7 +249,7 @@ button {
   }
 
   ::-webkit-input-placeholder {
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 400;
     word-spacing: 1px;
     letter-spacing: 1px;

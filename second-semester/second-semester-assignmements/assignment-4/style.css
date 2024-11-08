@@ -145,7 +145,7 @@ input[type="date"] {
 
 input[type="date"]::after {
   content: url("./assets/calender\ logo.svg");
-  position: absolute;
+  /* position: absolute; */
   right: 8px;
   top: 15px;
   transform: scale(1);

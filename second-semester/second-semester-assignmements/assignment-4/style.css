@@ -134,7 +134,7 @@ input:focus {
 
 input[type="date"] {
   color: transparent;
-
+  border: 1px solid grey;
   position: relative;
 }
 
@@ -181,6 +181,7 @@ select {
 
 #input-gender {
   width: 100%;
+  border: 1px solid grey;
 }
 
 #input-activity,
@@ -227,7 +228,7 @@ button {
 
 /* MOBILE VIEW */
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
   main {
     width: 100%;
     min-height: 100vh;
@@ -237,6 +238,31 @@ button {
     align-items: center;
     padding: 1rem;
   }
+
+  #signup-form {
+  background-color: white;
+  max-width: 480px;
+  min-width: 300px;
+  width: 100%;
+  padding: .7rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 40px 0 rgba(4, 8, 19, 0.1);
+}
+
+::-webkit-input-placeholder {
+  font-size: .8rem;
+  font-weight: 400;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+select{
+  font-size: .8rem;
+}
+
+#display_text{
+  font-size: .8rem;
+}
 
   .div-text-content {
     width: 100%;

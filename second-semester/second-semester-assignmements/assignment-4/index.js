@@ -1,4 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const headingParagraph = document.querySelector(".headingParagraph");
+
+  function changeText() {
+    if (window.matchMedia("(max-width: 450px)").matches) {
+      headingParagraph.textContent = `Inspiring wholesome harmony for the mind, body and spirit, for
+            everyone, everywhere.`;
+    } else {
+      headingParagraph.textContent = `Start benefiting from the wellness experience. For companies looking
+            on increasing productivity, and improving organizzational wellness.`;
+    }
+  }
+
+  changeText();
+
+  window.addEventListener("resize", changeText);
+
   document
     .getElementById("signup-form")
     .addEventListener("submit", function (e) {
@@ -134,8 +150,8 @@ document.addEventListener("DOMContentLoaded", function () {
         dateOfBirth: dateOfBirth.value.trim(),
         height: height.value.trim(),
         weight: weight.value.trim(),
-        activity : activityLevel.value.trim(),
-        password : password.value.trim()
+        activity: activityLevel.value.trim(),
+        password: password.value.trim(),
       };
 
       fetch("end point url", {
@@ -165,5 +181,4 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector("#display_text").style.display = "none";
     date_.style.color = "initial";
   };
-
 });

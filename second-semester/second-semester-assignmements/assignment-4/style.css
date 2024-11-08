@@ -255,8 +255,9 @@ button {
     letter-spacing: 0;
   }
 
-  input,select{
-    padding-left: 0.3rem;
+  input,
+  select {
+    padding-left: 0.4rem;
   }
 
   select {
@@ -264,8 +265,8 @@ button {
   }
 
   input[type="date"]::after {
-  top: 13px;
-}
+    top: 13px;
+  }
 
   #display_text {
     font-size: 0.8rem;

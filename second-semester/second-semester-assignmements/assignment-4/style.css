@@ -134,7 +134,7 @@ input[type="date"] {
   /* color: transparent; */
   /* border: 1px solid grey; */
   /* position: relative; */
-  /* width: 100% !important; */
+  width: 100% !important;
   /* max-width: 100%; */
   /* min-width: 100%; */
 }
@@ -257,6 +257,10 @@ button {
     font-weight: 400;
     word-spacing: 0;
     letter-spacing: 0;
+  }
+
+  .input-group{
+    width: 100%;
   }
 
   .input {

@@ -273,7 +273,7 @@ button {
   }
 
   input[type="date"] {
-    color: transparent;
+    /* color: transparent; */
     /* border: 1px solid grey; */
     /* position: relative; */
     /* width: 100% !important; */

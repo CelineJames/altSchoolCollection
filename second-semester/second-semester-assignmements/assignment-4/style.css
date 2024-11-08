@@ -134,6 +134,7 @@ input[type="date"] {
   color: transparent;
   border: 1px solid grey;
   position: relative;
+  width: 100%;
 }
 
 .display_date {
@@ -176,6 +177,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 input,
 select {
   height: 50px;
+  display: block;
 }
 
 #input-gender {

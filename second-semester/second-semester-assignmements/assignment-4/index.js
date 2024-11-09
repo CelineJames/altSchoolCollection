@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const headingParagraph = document.querySelector(".headingParagraph");
+  const passwordIcon = document.querySelector(".show");
+  const passwordField = document.querySelector("#input-password");
 
   function changeText() {
     if (window.matchMedia("(max-width: 450px)").matches) {
@@ -12,8 +14,19 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   changeText();
-
   window.addEventListener("resize", changeText);
+
+  passwordIcon.addEventListener("click", () => {
+    const type =
+      passwordField.getAttribute("type") === "password" ? "text" : "password";
+    passwordField.setAttribute("type", type);
+
+    if (passwordIcon.getAttribute("src") === "./assets/show.svg") {
+      passwordIcon.setAttribute("src", "./assets/hide.svg");
+    } else {
+      passwordIcon.setAttribute("src", "./assets/show.svg");
+    }
+  });
 
   document
     .getElementById("signup-form")

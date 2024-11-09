@@ -87,10 +87,12 @@ header nav > ul li a {
 
 /* Section styles */
 section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    gap: 1rem 0;
+    display: flex;
+    /* flex-direction: row;  */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
     padding: 2rem 0;
     background-color: rgb(224, 236, 249);
 }
@@ -101,10 +103,11 @@ h2 {
 
 /* Flip card styles */
 .flip-card {
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
     background-color: transparent;
     /* color: rgb(224, 236, 249); */
-    width: 350px;
+    /* min-width: 40%; */
+    width: 40%;
     height: 200px;
     border-radius: 1rem;
     perspective: 1000px;
@@ -181,8 +184,14 @@ footer {
     color: rgb(224, 236, 249);
 }
 
+@media only screen and (max-width: 786px) {
+    .flip-card{
+        width: 80%;
+    }
+}
 
-@media only screen  and (max-width: 400px) {
+
+@media only screen  and (max-width: 450px) {
     body{
         padding: 1.5rem;
     }
@@ -246,18 +255,12 @@ footer {
 }
 
     .navbar{
+        position: absolute;
+        top: 2rem;
         display: block;
         align-self: flex-end;
         padding-right: 1rem;
     }
-section {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    gap: 0;
-    padding:0;
-    background-color: rgb(224, 236, 249);
-}
 
 .flip-card{
     width: 80%;

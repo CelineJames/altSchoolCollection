@@ -11,27 +11,37 @@
     <title>Scissor</title>
   </head>
   <body>
-    <header class="flex justify-sb align-center">
+    <header>
       <div class="nav-logo">
         <img src="./assets/Logo (1).svg" alt="Logo" />
       </div>
 
-      <nav class="flex justify-sb align-center gap-3">
-        <a href="#" id="active">My URLs</a>
+      <!-- <div class="nav-wrapper"> -->
+        <nav>
+          <a href="#" id="active">My URLs</a>
 
-        <div class="nav-features flex justify-center align-center">
-          <a href="">Features</a>
-          <img src="./assets/chevron-down.svg" alt="icon-down" />
+          <div class="nav-features flex justify-center align-center">
+            <a href="">Features</a>
+            <img src="./assets/chevron-down.svg" alt="icon-down" />
+          </div>
+          <a href="">Pricing</a>
+          <a href="">Analytics</a>
+          <a href="">FAQs</a>
+
+          <div class="nav-buttons mobile">
+          <button type="button" class="button-sec">Log in</button>
+          <button type="button" class="button-primary">Try for free</button>
         </div>
-        <a href="">Pricing</a>
-        <a href="">Analytics</a>
-        <a href="">FAQs</a>
-      </nav>
+        </nav>
 
-      <div class="nav-buttons flex gap-1">
-        <button type="button" class="button-sec">Log in</button>
-        <button type="button" class="button-primary">Try for free</button>
-      </div>
+        <div class="nav-buttons flex gap-1 desktop">
+          <button type="button" class="button-sec">Log in</button>
+          <button type="button" class="button-primary">Try for free</button>
+        </div>
+
+        <img src="./assets/hamburger.svg" alt="" class="navbar" />
+
+      <!-- </div> -->
     </header>
 
     <section id="euro-section" class="flex column align-center">
@@ -57,7 +67,7 @@
     <section id="graphics2">
       <img src="./assets/graphic-2.svg" alt="a card" style="width: 100%" />
     </section>
-    <section id="possibilities" class="flex justify-sb">
+    <section id="possibilities">
       <div class="texts">
         <h2>One Stop.</h2>
         <h2>Four <span class="colored">Possibilities</span>.</h2>
@@ -89,7 +99,7 @@
     </section>
 
     <!-- WHY CHOOSE SCISSORS -->
-    <section id="why-scissors" class="flex justify-sb gap-3">
+    <section id="why-scissors">
       <div class="choose">
         <h2>Why choose <span class="colored">Scissors</span></h2>
         <p>
@@ -135,5 +145,404 @@
         </div>
       </div>
     </section>
+
+    <!-- PRICE PERFECT SECTION -->
+
+    <section class="price-perfect-section">
+      <div class="price-perfect">
+        <h2>A <span>perfect price</span> for your needs.</h2>
+        <p>
+          From catering for your personal, business, event, socials needs, you
+          can be rest assured we have you in mind in our pricing.
+        </p>
+      </div>
+
+      <div class="price-div">
+        <div class="cards white">
+          <span>Basic</span>
+          <h3>Free</h3>
+          <p>Free plan for all users</p>
+          <div class="card-list">
+            <div class="list">
+              <img src="./assets/check-circle.svg" alt="" /> Unlimited URL
+              shortening
+            </div>
+            <div class="list">
+              <img src="./assets/check-circle.svg" alt="" /> Basic Link
+              Analytics
+            </div>
+            <div class="list">
+              <img src="./assets/check-circle.svg" alt="" /> Customizable Short
+              Links
+            </div>
+            <div class="list">
+              <img src="./assets/check-circle.svg" alt="" /> Standard support
+            </div>
+            <div class="list">
+              <img src="./assets/check-circle.svg" alt="" /> Ad Supported
+            </div>
+          </div>
+        </div>
+
+        <div class="cards blue">
+          <span>Proffesional</span>
+          <h3>$15<span class="slash">/</span>month</h3>
+          <p>Ideal for bussiness creators</p>
+
+          <div class="card-list">
+            <div class="list">
+              <img src="./assets/check-circle white.svg" alt="" /> Enhanced Link
+              Analytics
+            </div>
+            <div class="list">
+              <img src="./assets/check-circle white.svg" alt="" /> Custom
+              branded Domains
+            </div>
+            <div class="list">
+              <img src="./assets/check-circle white.svg" alt="" /> Advanced Link
+              Customization
+            </div>
+            <div class="list">
+              <img src="./assets/check-circle white.svg" alt="" /> Prority
+              support
+            </div>
+            <div class="list">
+              <img src="./assets/check-circle white.svg" alt="" /> Ad-free
+              Experience
+            </div>
+          </div>
+        </div>
+
+        <div class="cards white">
+          <span>Teams</span>
+          <h3>$25<span class="slash">/</span>month</h3>
+          <p>Share with up to 10 users</p>
+
+          <div class="card-list">
+            <div class="list">
+              <img src="./assets/check-circle.svg" alt="" /> Team Collaborations
+            </div>
+            <div class="list">
+              <img src="./assets/check-circle.svg" alt="" /> User Roles and
+              Permissions
+            </div>
+            <div class="list">
+              <img src="./assets/check-circle.svg" alt="" /> Enhanced Security
+            </div>
+            <div class="list">
+              <img src="./assets/check-circle.svg" alt="" /> API Access
+            </div>
+            <div class="list">
+              <img src="./assets/check-circle.svg" alt="" /> Dedicated Account
+              Manager
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button type="button" class="button-sec2">Get Custom Pricing</button>
+        <button type="button" class="button-primary2">Select Pricing</button>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+
+    <section class="faq">
+      <form action="">
+        <input type="text" placeholder="PLace URL here..." />
+        <div class="input-group flex gap-1">
+          <div class="input">
+            <select name="" id="domain">
+              <option value="choose">Choose Domain</option>
+              <option value=""></option>
+            </select>
+          </div>
+          <div class="input">
+            <input type="text" placeholder="Type Alias here" />
+          </div>
+        </div>
+        <button type="button" class="trim">
+          Trim URL <img src="./assets/magic wand.svg" alt="wand" />
+        </button>
+
+        <p>
+          By clicking TrimURL, I agree to the <a href="#">Terms of Service</a>,
+          <a href="#">Privacy Policy</a> and Use of Cookies.
+        </p>
+      </form>
+
+      <span class="text">FAQs</span>
+    </section>
+
+    <!-- FAQ 2 -->
+
+    <section class="faq2">
+      <div class="section-faq">
+        <h2>FAQs</h2>
+
+        <div class="container">
+          <div class="label">
+            How does URL shortening work?
+
+            <img src="./assets/plus.svg" alt="" class="label-icon" />
+          </div>
+          <div class="content">
+            <p>
+              URL shortening works by taking a long URL and creating a shorter,
+              condensed version that redirects to the original URL. When a user
+              clicks on the shortened link, they are redirected to the intended
+              destination.
+            </p>
+          </div>
+        </div>
+        <hr />
+
+        <div class="container">
+          <div class="label">
+            Is it necessary to create an account to use the URL shortening
+            service?
+
+            <img src="./assets/plus.svg" alt="icon" class="label-icon" />
+          </div>
+          <div class="content">
+            <p>
+              URL shortening works by taking a long URL and creating a shorter,
+              condensed version that redirects to the original URL. When a user
+              clicks on the shortened link, they are redirected to the intended
+              destination.
+            </p>
+          </div>
+        </div>
+        <hr />
+
+        <div class="container">
+          <div class="label">
+            Are the shortened links permanent? Will they expire?
+
+            <img src="./assets/plus.svg" alt="icon" class="label-icon" />
+          </div>
+          <div class="content">
+            <p>
+              URL shortening works by taking a long URL and creating a shorter,
+              condensed version that redirects to the original URL. When a user
+              clicks on the shortened link, they are redirected to the intended
+              destination.
+            </p>
+          </div>
+        </div>
+        <hr />
+
+        <div class="container">
+          <div class="label">
+            Are there any limitations on the number of URLs I can shorten?
+
+            <img src="./assets/plus.svg" alt="icon" class="label-icon" />
+          </div>
+          <div class="content">
+            <p>
+              URL shortening works by taking a long URL and creating a shorter,
+              condensed version that redirects to the original URL. When a user
+              clicks on the shortened link, they are redirected to the intended
+              destination.
+            </p>
+          </div>
+        </div>
+        <hr />
+
+        <div class="container">
+          <div class="label">
+            Can I customize the shortened URLs to reflect my brand or content?
+
+            <img src="./assets/plus.svg" alt="icon" class="label-icon" />
+          </div>
+          <div class="content">
+            <p>
+              URL shortening works by taking a long URL and creating a shorter,
+              condensed version that redirects to the original URL. When a user
+              clicks on the shortened link, they are redirected to the intended
+              destination.
+            </p>
+          </div>
+        </div>
+        <hr />
+
+        <div class="container">
+          <div class="label">
+            Can I track the performance of my shortened URLs?
+
+            <img src="./assets/plus.svg" alt="icon" class="label-icon" />
+          </div>
+          <div class="content">
+            <p>
+              URL shortening works by taking a long URL and creating a shorter,
+              condensed version that redirects to the original URL. When a user
+              clicks on the shortened link, they are redirected to the intended
+              destination.
+            </p>
+          </div>
+        </div>
+        <hr />
+
+        <div class="container">
+          <div class="label">
+            How secure is the URL shortening service? Are the shortened links
+            protected against spam or malicious activity?
+
+            <img src="./assets/plus.svg" alt="icon" class="label-icon" />
+          </div>
+          <div class="content">
+            <p>
+              URL shortening works by taking a long URL and creating a shorter,
+              condensed version that redirects to the original URL. When a user
+              clicks on the shortened link, they are redirected to the intended
+              destination.
+            </p>
+          </div>
+        </div>
+        <hr />
+
+        <div class="container">
+          <div class="label">
+            What is a QR code and what can it do?
+
+            <img src="./assets/plus.svg" alt="icon" class="label-icon" />
+          </div>
+          <div class="content">
+            <p>
+              URL shortening works by taking a long URL and creating a shorter,
+              condensed version that redirects to the original URL. When a user
+              clicks on the shortened link, they are redirected to the intended
+              destination.
+            </p>
+          </div>
+        </div>
+        <hr />
+
+        <div class="container">
+          <div class="label">
+            Is there an API available for integrating the URL shortening service
+            into my own applications or websites?
+
+            <img src="./assets/plus.svg" alt="icon" class="label-icon" />
+          </div>
+          <div class="content">
+            <p>
+              URL shortening works by taking a long URL and creating a shorter,
+              condensed version that redirects to the original URL. When a user
+              clicks on the shortened link, they are redirected to the intended
+              destination.
+            </p>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </section>
+
+    <!--  revolutionizing -->
+
+    <section class="revolutionizing">
+      <h2>Revolutionizing Link Optimization</h2>
+      <button type="button" class="button">Get Started</button>
+      <span>footer</span>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="logos">
+        <div class="footer-logo">
+          <img src="./assets/Logo (2).svg" alt="logo" />
+        </div>
+        <div class="social-logo flex justify-sb gap-2">
+          <img src="./assets/twitter.svg" alt="twitter-icon" />
+          <img src="./assets/instagram.svg" alt="instagram-icon" />
+          <img src="./assets/linkedin.svg" alt="linkedin-icon" />
+          <img src="./assets/facebook.svg" alt="facebook-icon" />
+        </div>
+      </div>
+
+      <div class="footer-div2 flex column gap-3">
+        <div class="footer-why-scissor">
+          <h3>Why Scissor ?</h3>
+          <ul>
+            <li>Scisssor 101</li>
+            <li>Integrations & API</li>
+            <li>Pricing</li>
+          </ul>
+        </div>
+        <div class="footer-resources">
+          <h3>Resources</h3>
+          <ul>
+            <li>Blog</li>
+            <li>Resource Library></li>
+            <li>Developers</li>
+            <li>App Conectors</li>
+            <li>Support</li>
+            <li>Trust Center</li>
+            <li>Browser Extension</li>
+            <li>Mobile App</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-div3 flex column gap-3">
+        <div class="footer-solutions">
+          <h3>Solutions</h3>
+          <ul>
+            <li>Social Media</li>
+            <li>Digital Marketing</li>
+            <li>Customer Service</li>
+            <li>For Developers</li>
+          </ul>
+        </div>
+        <div class="footer-features">
+          <h3>Features</h3>
+          <ul>
+            <li>Branded Links</li>
+            <li>Mobile Links</li>
+            <li>Campaign</li>
+            <li>Management & Anlaytics</li>
+            <li>QR Code generation</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-div4 flex column gap-3">
+        <div class="footer-products">
+          <h3>Products</h3>
+          <ul>
+            <li>Link Managements</li>
+            <li>QR Codes</li>
+            <li>Link-in-bio</li>
+          </ul>
+        </div>
+        <div class="footer-legal">
+          <h3>Legal</h3>
+          <ul>
+            <li>Privacy Policy</li>
+            <li>Cookie Policy</li>
+            <li>Terms of service</li>
+            <li>Acceptable Use Policy</li>
+            <li>Code Of Conduct</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-div5 flex column gap-3">
+        <div class="footer-company">
+          <h3>Company</h3>
+          <ul>
+            <li>About Scissor</li>
+            <li>Careers</li>
+            <li>Partners</li>
+            <li>Press</li>
+            <li>Contact</li>
+            <li>Reviews</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-last">Term of Service | Security | Scissor 2023</div>
+    </footer>
+    <script src="./index.js"></script>
   </body>
 </html>

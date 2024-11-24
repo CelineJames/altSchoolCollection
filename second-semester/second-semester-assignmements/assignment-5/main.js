@@ -54,6 +54,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Validate Last Name
 
+    if (lName.value.trim() === "") {
+      lNameError.innerHTML = "Please fill in your last name.";
+      lName.style.border = "1px solid red";
+    } else if (lName.value.includes(" ")) {
+      lNameError.innerHTML = "Last name cannot contain spaces.";
+      lName.style.border = "1px solid red";
+    } else if (lName.value.trim().length < 2) {
+      lNameError.innerHTML = "Last name must be at least 2 characters long.";
+      lName.style.border = "1px solid red";
+    } else {
+      lNameError.innerHTML = "";
+      lName.style.border = "none";
+    }
     // Validate Email
     function validateEmail(email) {
       const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

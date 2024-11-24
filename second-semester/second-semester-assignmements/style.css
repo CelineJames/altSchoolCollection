@@ -170,6 +170,11 @@ h2 {
         color: white;
         font-size: 1.5rem;
     }
+
+}
+
+a:visited{
+    color: white;
 }
 
 /* Footer styles */
@@ -186,7 +191,7 @@ footer {
 
 @media only screen and (max-width: 786px) {
     .flip-card{
-        width: 80%;
+        width: 80%; 
     }
 }
 

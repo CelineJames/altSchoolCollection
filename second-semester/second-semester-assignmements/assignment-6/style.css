@@ -700,15 +700,16 @@ select option:first-child {
     padding: 0;
     align-items: flex-start;
     position: relative;
+  
   }
 
-  .navbar {
+  .navbar{
     display: block;
   }
 
-  .nav-buttons {
-    /* display: none; */
-
+  nav .nav-buttons {
+    display: flex;
+      margin-left: 0;
     flex-direction: column;
   }
 
@@ -721,7 +722,7 @@ select option:first-child {
     background-color: white;
     border: 1px solid #0065fe;
     border-radius: 8px;
-    transform: translateX(220px);
+    transform: translateX(-400px);
     gap: 10px;
     z-index: 1;
   }
@@ -744,10 +745,6 @@ select option:first-child {
       margin-top: 0.5rem;
       margin-bottom: 1rem;
       line-height: 1.6;
-    }
-
-    .nav-buttons {
-      margin-left: 0;
     }
   }
 

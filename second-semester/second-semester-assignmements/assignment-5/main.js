@@ -1,6 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
   const submitBtn = document.getElementById("submitBtn");
   const mega = document.querySelector(".mega");
+  const hamburger = document.querySelector(".navbar");
+  const nav = document.querySelector(".nav-items");
+
+  // navbar toggle
+
+  hamburger.addEventListener("click", () => {
+    if (hamburger.getAttribute("src") === "./assets/hamburger.svg") {
+      hamburger.setAttribute("src", "./assets/close-hamburger.svg");
+      nav.classList.add("display");
+    } else {
+      hamburger.setAttribute("src", "./assets/hamburger.svg");
+      nav.classList.remove("display");
+    }
+  });
 
   // FORM VALIDATION
   const fName = document.getElementById("first-name");
@@ -39,7 +53,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Validate Last Name
-    
 
     // Validate Email
     function validateEmail(email) {
